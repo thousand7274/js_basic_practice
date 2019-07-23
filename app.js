@@ -30,8 +30,10 @@ if(score >= 80) {
     console.log(`${score}点 また来年`);
   }
 
+// ifとforの練習
   // ３と３の倍数だけあほになる
 for (let i = 1; i <= 30; i++){
+  // ３で割った時の余りが0になる時
   if (i % 3 == 0 ){
     console.log(i+'あほ');
   }
@@ -39,3 +41,20 @@ for (let i = 1; i <= 30; i++){
   console.log(i);
   }
 }
+
+// ５の倍数と３の倍数の時にメッセージ
+// それ以外は数字
+// １〜１００まで
+// 出力はconsole.log
+
+console.log('====practice_for+if====')
+
+for (let i = 1; i <= 100; i++){
+  if (i % 3 == 0 || i % 5 == 0){
+    console.log('サンゴ');
+  }
+  else (console.log(i));
+}
+  // else if (i % 5 == 0){
+  //   console.log('ゴーゴー');
+  // }
