@@ -67,34 +67,35 @@ console.log('====fizz_buzz====');
 // それ以外は１〜１００まで
 // 値はconsole.logで出力
 
+// １個ずつ処理する癖をつける！！
+
 for (let i = 1; i <= 100; i++){
   if (i % 3 ==0 && i % 5 ==0){
     console.log('Fizz&Fuzz');
-  }
-  else if (i % 3 == 0){
+  } else if (i % 3 == 0){
     console.log('Fizz');
-  }else if (i % 5 == 0){
+  } else if (i % 5 == 0){
     console.log('Fuzz');
-  }
-  else{
+  } else{
     console.log(i);
   }
 }
 
-// console.log('====switch_ver.====');
-// for (let i = 1; i <= 100; i++){
-//   switch (i){
-//     case (`${i % 3 ==0 && i % 5 ==0}`):
-//       console.log('Fizz&Fuzz');
-//       break;
-//     case i % 3 ==0:
-//       console.log('Fizz');
-//       break;
-//     case i % 5 ==0:
-//       console.log('Fuzz');
-//       break;
-//     default:
-//       console.log(i);
-//       break;  
-//     }
-//   }
+console.log('====switch_ver.====');
+for (let i = 1; i <= 100; i++){
+  switch (0){
+    // 値が同じ時って事でswitchの中は0
+    case i % 15 :
+      console.log('Fizz&Fuzz');
+      break;
+    case i % 3 :
+      console.log('Fizz');
+      break;
+    case i % 5 :
+      console.log('Fuzz');
+      break;
+    default:
+      console.log(i);
+      break;
+    }
+  }
