@@ -58,3 +58,43 @@ for (let i = 1; i <= 100; i++){
   // else if (i % 5 == 0){
   //   console.log('ゴーゴー');
   // }
+
+console.log('====fizz_buzz====');
+
+// 3で割り切れる時はFizz
+// 5で割り切れる時はFuzz
+// 両方で割り切れる時はFizzBuzz
+// それ以外は１〜１００まで
+// 値はconsole.logで出力
+
+for (let i = 1; i <= 100; i++){
+  if (i % 3 ==0 && i % 5 ==0){
+    console.log('Fizz&Fuzz');
+  }
+  else if (i % 3 == 0){
+    console.log('Fizz');
+  }else if (i % 5 == 0){
+    console.log('Fuzz');
+  }
+  else{
+    console.log(i);
+  }
+}
+
+// console.log('====switch_ver.====');
+// for (let i = 1; i <= 100; i++){
+//   switch (i){
+//     case (`${i % 3 ==0 && i % 5 ==0}`):
+//       console.log('Fizz&Fuzz');
+//       break;
+//     case i % 3 ==0:
+//       console.log('Fizz');
+//       break;
+//     case i % 5 ==0:
+//       console.log('Fuzz');
+//       break;
+//     default:
+//       console.log(i);
+//       break;  
+//     }
+//   }
