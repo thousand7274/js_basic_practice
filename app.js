@@ -29,3 +29,13 @@ if(score >= 80) {
   } else {
     console.log(`${score}点 また来年`);
   }
+
+  // ３と３の倍数だけあほになる
+for (let i = 1; i <= 30; i++){
+  if (i % 3 == 0 ){
+    console.log(i+'あほ');
+  }
+  else{
+  console.log(i);
+  }
+}
