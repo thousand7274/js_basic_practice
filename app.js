@@ -82,6 +82,7 @@ for (let i = 1; i <= 100; i++){
 }
 
 console.log('====switch_ver.====');
+
 for (let i = 1; i <= 100; i++){
   switch (0){
     // 値が同じ時って事でswitchの中は0
@@ -99,3 +100,61 @@ for (let i = 1; i <= 100; i++){
       break;
     }
   }
+
+//   let fish = confirm('あなたは魚が好きですか？');
+// if (fish){
+//   console.log('カルシウムたっぷり');
+//   } else{
+//   console.log('魚美味しいよ！')
+// }
+// console.log(fish)
+
+
+// テンプレートリテラル
+// 変数と文字を組み合わせるときはバックウォートを使う
+
+// let fruit = prompt('あなたの好きなフルーツはなんですか？');
+// console.log(`私の好きなフルーツは${fruit}です`);
+
+// switchで切り替える
+// りんご　青森さんが美味しいです
+// みかん　温州ミカンがお勧めです
+// バナナ　フィリピンが名産です
+// 桃     といえば岡山ですね！
+// その他　何かしらのメッセージ
+
+// switch (fruit){
+//   case 'りんご':
+//     console.log('青森産が美味しいです');
+//     break;
+//   case 'みかん':
+//       console.log('温州ミカンがお勧めです');
+//       break;
+//   case 'バナナ':
+//       console.log('バナナといえばフィリピン！');
+//       break;
+//   case '桃':
+//       console.log('ももといえば岡山！');
+//       break;
+//   default:
+//       console.log('フルーツ美味しいよね！');
+//     break;
+//   }
+
+// 生まれ年を入れたら年齢を返す
+// functionで予め計算式を作ってその関数に数字代入するだけで計算してくれる
+// 中で使える変数のことを引数という
+
+function getAge (age){
+  console.log(2019 - age);
+}
+getAge(1989);
+
+
+
+
+
+
+
+
+
