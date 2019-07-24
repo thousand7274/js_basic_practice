@@ -149,7 +149,20 @@ function getAge (age){
   console.log(2019 - age);
 }
 getAge(1989);
+// １〜１００の繰り返し処理
+// nで割り切れる数だけを出力する関数を作る
+// 出力はconsole.log
+console.log('======calc======');
 
+function calc(n){
+  for (let index = 1; index <= 100; index++){
+    if( index % n === 0){
+    console.log(index);
+    }
+    // return index;
+  }
+}
+ calc(20);
 
 
 
